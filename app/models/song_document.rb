@@ -1,0 +1,2 @@
+class SongDocument < ApplicationRecord
+end

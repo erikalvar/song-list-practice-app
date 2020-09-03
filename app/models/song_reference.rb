@@ -1,0 +1,2 @@
+class SongReference < ApplicationRecord
+end
