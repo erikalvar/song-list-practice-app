@@ -2,8 +2,11 @@ class Api::UsersController < ApplicationController
 
   def create
     user = User.new(
-      name: params[:name],
+      first_name: params[:first_name],
+      last_name: params[:last_name],
+      username: params[:username],
       email: params[:email],
+      profile_picture: params[:profile_picture],
       password: params[:password],
       password_confirmation: params[:password_confirmation]
     )
@@ -13,5 +16,5 @@ class Api::UsersController < ApplicationController
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
   end
-  
+
 end
