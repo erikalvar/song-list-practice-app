@@ -1,0 +1,13 @@
+{
+  id: song.id,
+  title: song.title,
+  author: song.author,
+  key: song.key,
+  mode: song.mode,
+  key: song.key,
+  mode: song.mode,
+  tempo: song.tempo,
+  duration: song.duration,
+  status: song.status,
+  notes: song.notes
+}

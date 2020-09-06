@@ -11,5 +11,11 @@ Rails.application.routes.draw do
     get "/users/:id" => "users#show"
     put "/users/:id" => "users#update"
     delete "/users/:id" => "users#destroy"
+
+    get "/songs" => "songs#index"
+    post "/songs" => "songs#create"
+    get "/songs/:id" => "songs#show"
+    put "/songs/:id" => "songs#update"
+    delete "/songs/:id" => "songs#destroy"
   end
 end
